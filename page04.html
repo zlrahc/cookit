@@ -1,0 +1,67 @@
+<html>
+<head>
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/page.css">
+    <link rel="icon" href="images/logo.png">
+    <title>CooKit - Contact Us</title>
+</head>
+
+<body>
+
+    <!------------------ Navigation bar - Top --------------------->
+
+    <nav class="nav01">
+        <ul>
+            <li><a class="navtitle" href="index.html">CooKit</a></li>
+            <li><a class="button" href="page01.html">HOME</a></li>
+            <li><a class="button" href="page02.html">RECIPES</a></li> 
+            <li><a class="button" href="page03.html">ABOUT US</a></li>
+            <li><a class="button" href="page04.html">CONTACT US</a></li>
+        </ul>
+    </nav>
+
+    <!--------------------------- Body ----------------------------->
+
+    
+
+<div class="row">
+
+    <div class="column">
+    <div class="container">
+    <form action="action_page.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" placeholder="@example.com">
+
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+    <option value="phil">Philippines</option>
+    <option value="qtar">Qatar</option>
+    <option value="usa">USA</option>
+    <option value="jpn">Japan</option>
+    <option value="idsa">Indonesia</option>
+    <option value="egyp">Egypt</option>
+    <option value="thai">Thailand</option>
+    <option value="country">others</option>      
+    <option>
+    </select>
+
+    <label for="subject">Message</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+    </form>
+
+</div>
+
+    
+</body>
+</html>

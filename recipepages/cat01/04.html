@@ -1,0 +1,108 @@
+<html>
+<head>
+    <link rel="stylesheet" href="../../css/page.css">
+    <link rel="icon" href="../../images/logo.png">
+    <title>CooKit - Ginisang Monggo</title>
+</head>
+
+<body>
+
+    <!------------------ Navigation bar - Top --------------------->
+ 
+    <nav class="nav01">
+        <ul>
+            <li><a class="navtitle" href="../../index.html">CooKit</a></li>
+            <li><a class="button" href="../../page01.html">HOME</a></li>
+            <li><a class="button" href="../../page02.html">RECIPES</a></li> 
+            <li><a class="button" href="../../page03.html">ABOUT US</a></li>
+            <li><a class="button" href="../../page04.html">CONTACT US</a></li>
+        </ul>
+    </nav>
+
+    <!--------------------------- Body ----------------------------->
+    
+    <a class="backbutton" onclick="history.back()">←</a>
+    
+    <p class="dish">Ginisang Monggo</p>
+        
+    <p class="tab">Ingredients</p>
+
+    <div class="column2">
+        <div class="column2-content">
+            <p>1 1/2 cups Mung Beans</p>
+            <p>1 tbsp garlic </p>
+            <p>½ lb pork thinly sliced</p>
+            <p>2 cups spinach (or alugbati) </p>
+            <p>1 piece tomato chopped</p>
+            <p>1 piece onion chopped</p>    
+        </div>
+
+        <div class="column2-content">
+            <p>24 ounces water for boiling</p> 
+            <p>1 piece Knorr beef cube for flavoring</p>
+            <p>1/2 cup crushed pork rind chicharon</p>
+            <p>1/4 teaspoon ground black pepper</p>
+            <p>8 pieces shrimp optional</p>
+            <p>2 tablespoons fish sauce</p>                    
+        </div>
+    </div>
+    
+    <p class="tab">Procedures</p>
+
+    <div class="column1-1">
+        <div></div>
+        <div class="column1-content1">
+            <p>1. We will start by pouring 24 ounces of water in a pan, which we will boil. Once it starts boiling, you can place your 1 ½ cups of Mung beans inside.</p>
+            <p>2. Let this simmer until the munggo gets soft. This should take about 35 to 50 minutes. </p>
+            <p>3. Use 1 tablespoon of garlic, and 1 medium-sized onion and 1 medium-sized tomato, both of which are chopped. </p>
+            <p>4. Put this in a separate pan, and start sautéing these together. Then incorporate your ½ lb. of thinly sliced pork. Now let all of these ingredients cook up nicely for 5 minutes. </p>
+            <p>5. Afterwards, we’ll be adding 1 beef cube and 2 tablespoons of fish sauce for some more savory flavor. </p>
+            <p>6. You could also use 1 teaspoon of beef powder in the place of the beef cube if this is unavailable. Then we will be letting this simmer for 10 minutes or at least until your meat gets tender. </p>
+            <p>7. You can also pour in more water to make sure the meat is soft, but make sure that you also simmer for longer. </p>
+            <p>8. Now put your 5 to 8 pieces of medium-sized shrimp inside, which is also an optional ingredient. Now stir these all together, and cook the ingredients for 2 minutes.</p>
+            <p>9. grab our cooked munggo from earlier, and also add them to the pan. Start stirring again, and then let the pan simmer for 10 minutes.</p>
+            <p>10. Then proceed to place your 2 cups of spinach and ½ cup of crushed pork rind or chicharon inside. And for our final touch to tie in all those ingredients together, we will be adding ¼ teaspoon of ground black pepper. </p>
+            <p>11. You now have a delicious plate of Ginisang Munggo fresh off the pan that’ll be perfect for a party of 6! But you can keep your chef’s hat on, and learn more delightfully nutritious Filipino recipes to serve.</p>      
+        </div>
+    </div>
+
+    <div class="rate-container">
+        <p class="review">Rate the recipe!</p>
+            <div class="send">
+                <div class="text">Thank you for your rating!</div>
+            </div>
+        <div class="rating">
+            <input type="radio" id="five" name="stars">
+            <label for="five"></label>
+            <input type="radio" id="four" name="stars">
+            <label for="four"></label>
+            <input type="radio" id="three" name="stars">
+            <label for="three"></label>
+            <input type="radio" id="two" name="stars">
+            <label for="two"></label>
+            <input type="radio" id="one" name="stars">
+            <label for="one"></label>
+            <form action="#">
+            <header></header>
+                <div class="areatext">
+                    <textarea cols="25" placeholder="What did you think about this recipe? Did you make any changes to this recipe?"></textarea>
+                </div>
+                <div class="bttn">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        const bttn = document.querySelector("button");
+        const send = document.querySelector(".send");
+        const rating = document.querySelector(".rating");
+        bttn.onclick = ()=> {
+            rating.style.display = "none";
+            send.style.display = "block";
+            return false;
+        }
+    </script>
+
+</body>
+</html>

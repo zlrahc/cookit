@@ -1,0 +1,116 @@
+<html>
+<head>
+    <link rel="stylesheet" href="../../css/page.css">
+    <link rel="icon" href="../../images/logo.png">
+    <title>CooKit - Chop Suey</title>
+</head>
+
+<body>
+
+    <!------------------ Navigation bar - Top --------------------->
+ 
+    <nav class="nav01">
+        <ul>
+            <li><a class="navtitle" href="../../index.html">CooKit</a></li>
+            <li><a class="button" href="../../page01.html">HOME</a></li>
+            <li><a class="button" href="../../page02.html">RECIPES</a></li> 
+            <li><a class="button" href="../../page03.html">ABOUT US</a></li>
+            <li><a class="button" href="../../page04.html">CONTACT US</a></li>
+        </ul>
+    </nav>
+
+    <!--------------------------- Body ----------------------------->
+    
+    <a class="backbutton" onclick="history.back()">←</a>
+    
+    <p class="dish">Chop Suey</p>
+        
+    <p class="tab">Ingredients</p>
+
+    <div class="column2">
+        <div class="column2-content">
+            <p>7 pieces shrimp cleaned and deveined</p>
+            <p>3 ounces pork sliced</p>
+            <p>3 ounces boneless chicken breast sliced</p>
+            <p>1 ½ cup cauliflower florets</p>
+            <p>1 piece carrot sliced crosswise into thin pieces</p>
+            <p>15 pieces snow peas</p>
+            <p>8 pieces baby corn</p>
+            <p>1 piece red bell pepper sliced into squares</p>
+            <p>1 ½ cups cabbage chopped</p>
+        </div>
+
+        <div class="column2-content">
+            <p>12 pieces quail eggs boiled</p>
+            <p>1 piece yellow onion sliced</p>
+            <p>4 cloves garlic crushed</p>
+            <p>¼ cup soy sauces </p>
+            <p>1 ½ tablespoons oyster sauce</p>
+            <p> ¾cup waterp</p>
+            <p>1 tablespoon cornstarch diluted in ½ cup water</p>
+            <p>¼ teaspoon ground black pepper</p>
+            <p>3 tablespoons cooking oil</p>
+        </div>
+    </div>
+
+    <p class="tab">Procedures</p>
+
+    <div class="column1-1">
+        <div></div>
+        <div class="column1-content1">
+            <p>1. Heat oil in a wok or pan. </p>
+            <p>2. Pan fry the shrimp for 1 minute per side. Remove from the wok. Set aside. </p>
+            <p>3. Saute onion. Add garlic and continue to saute until the onion becomes soft. </p>
+            <p>4. Add pork and chicken. Stir fry until light brown. </p>
+            <p>5. Add soy sauce and oyster sauce. Stir. </p>
+            <p>6. Pour water. Let boil. Cover and cook in medium heat for 15 minutes. </p>
+            <p>7. Add cauliflower, carrots, bell peppers, snow peas, and young corn. Stir. </p>
+            <p>8. Add cabbage. Toss. Cover and cook for 5 to 7 minutes. </p>
+            <p>9. Put the pan-fried shrimp into the pot and add ground black pepper. </p>
+            <p>10. Add the boiled quail eggs and cornstarch diluted in water. Toss. </p>
+            <p>11. Transfer to a serving plate. Serve. </p>
+            <p>12. Share and enjoy! </p>
+        </div>
+        <div></div>
+    </div>
+
+    <div class="rate-container">
+        <p class="review">Rate the recipe!</p>
+            <div class="send">
+                <div class="text">Thank you for your rating!</div>
+            </div>
+        <div class="rating">
+            <input type="radio" id="five" name="stars">
+            <label for="five"></label>
+            <input type="radio" id="four" name="stars">
+            <label for="four"></label>
+            <input type="radio" id="three" name="stars">
+            <label for="three"></label>
+            <input type="radio" id="two" name="stars">
+            <label for="two"></label>
+            <input type="radio" id="one" name="stars">
+            <label for="one"></label>
+            <form action="#">
+            <header></header>
+                <div class="areatext">
+                    <textarea cols="25" placeholder="What did you think about this recipe? Did you make any changes to this recipe?"></textarea>
+                </div>
+                <div class="bttn">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        const bttn = document.querySelector("button");
+        const send = document.querySelector(".send");
+        const rating = document.querySelector(".rating");
+        bttn.onclick = ()=> {
+            rating.style.display = "none";
+            send.style.display = "block";
+            return false;
+        }
+    </script>
+    
+</body>
+</html>

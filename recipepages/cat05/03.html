@@ -1,0 +1,96 @@
+<html>
+<head>
+    <link rel="stylesheet" href="../../css/page.css">
+    <link rel="icon" href="../../images/logo.png">
+    <title>CooKit - Mochi Ice cream</title>
+</head>
+
+<body>
+
+    <!------------------ Navigation bar - Top --------------------->
+ 
+    <nav class="nav01">
+        <ul>
+            <li><a class="navtitle" href="../../index.html">CooKit</a></li>
+            <li><a class="button" href="../../page01.html">HOME</a></li>
+            <li><a class="button" href="../../page02.html">RECIPES</a></li> 
+            <li><a class="button" href="../../page03.html">ABOUT US</a></li>
+            <li><a class="button" href="../../page04.html">CONTACT US</a></li>
+        </ul>
+    </nav>
+
+    <!--------------------------- Body ----------------------------->
+    
+    <a class="backbutton" onclick="history.back()">←</a>
+    
+    <p class="dish">Mochi Ice cream</p>
+        
+    <p class="tab">Ingredients</p>
+
+    <div class="column1">
+        <div class="column1-content">
+            <p>Glutinous rice flour (Mochiko or Shiratamako sweet rice flour).  Regular flour will not work for this recipe! </p>
+            <p>Water</p>
+            <p>Sugar</p>
+            <p>Powdered sugar</p>
+            <p>Cornstarch (or potato starch) – to help with the stickiness of the dough</p>             
+        </div>
+    </div>
+
+    <p class="tab">Procedures</p>
+
+    <div class="column1-1">
+        <div></div>
+        <div class="column1-content1">
+            <p>1.	Freeze ice cream balls:  Place a piece of parchment paper on a cookie sheet.</p>
+            <p>2.	Combine flour, sugar, and powdered sugar in a microwave safe bowl. Add water and stir well, until smooth.  Cover the bowl with plastic wrap and microwave mochi dough for 1 minute.</p>
+            <p>3.	Cover, and microwave again for 1 minute.  Fold the dough again and microwave for 30 more seconds.  The mochi should look slightly shiny and if it doesn't, microwave for 30 more seconds.</p>
+            <p>4.	Place a piece of parchment paper on the counter and dust it with a layer of cornstarch.  Use a rubber spatula to scrape the mochi dough from the bowl and onto the parchment paper (keep in mind that it will be very hot so be careful not to touch it).</p>
+            <p>5.	Dust the top of the dough ball with cornstarch.  Use a rolling pin to roll the mochi dough into a large rectangle, about ¼ inch thick.  If the dough sticks at all while rolling, continue to dust the top with cornstarch to prevent sticking.  Place the parchment paper with the rolled out dough on it, onto the cookie sheet and refrigerate for 30 minutes.</p>
+            <p>6.	Remove the dough from the fridge and use a round biscuit cutter (about 3 inches) to cut circles in the dough.  Your circles need to be big enough to pinch the dough around the ice cream.  Pick up one circle of dough and gently brush off the cornstarch from the top.</p>
+            <p>7.	Working with one scoop of ice cream at a time, (keep the rest in the freezer so they don't melt), place one ice cream scoop in the center of the mochi and gently press the dough around the ice cream.  Pinch the edges of the mochi to seal it. Place mochi on a piece of plastic wrap bringing the corners of the plastic wrap to the center and twisting it tightly at the top.</p>
+            <p>8.	Place mochi back in the freezer with the rolled plastic wrap side down.</p>
+        </div>
+        <div></div>
+    </div>
+
+    <div class="rate-container">
+        <p class="review">Rate the recipe!</p>
+            <div class="send">
+                <div class="text">Thank you for your rating!</div>
+            </div>
+        <div class="rating">
+            <input type="radio" id="five" name="stars">
+            <label for="five"></label>
+            <input type="radio" id="four" name="stars">
+            <label for="four"></label>
+            <input type="radio" id="three" name="stars">
+            <label for="three"></label>
+            <input type="radio" id="two" name="stars">
+            <label for="two"></label>
+            <input type="radio" id="one" name="stars">
+            <label for="one"></label>
+            <form action="#">
+            <header></header>
+                <div class="areatext">
+                    <textarea cols="25" placeholder="What did you think about this recipe? Did you make any changes to this recipe?"></textarea>
+                </div>
+                <div class="bttn">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        const bttn = document.querySelector("button");
+        const send = document.querySelector(".send");
+        const rating = document.querySelector(".rating");
+        bttn.onclick = ()=> {
+            rating.style.display = "none";
+            send.style.display = "block";
+            return false;
+        }
+    </script>
+
+</body>
+</html>

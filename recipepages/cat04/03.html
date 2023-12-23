@@ -1,0 +1,111 @@
+<html>
+<head>
+    <link rel="stylesheet" href="../../css/page.css">
+    <link rel="icon" href="../../images/logo.png">
+    <title>CooKit - Pancit</title>
+</head>
+
+<body>
+
+    <!------------------ Navigation bar - Top --------------------->
+ 
+    <nav class="nav01">
+        <ul>
+            <li><a class="navtitle" href="../../index.html">CooKit</a></li>
+            <li><a class="button" href="../../page01.html">HOME</a></li>
+            <li><a class="button" href="../../page02.html">RECIPES</a></li> 
+            <li><a class="button" href="../../page03.html">ABOUT US</a></li>
+            <li><a class="button" href="../../page04.html">CONTACT US</a></li>
+        </ul>
+    </nav>
+
+    <!--------------------------- Body ----------------------------->
+    
+    <a class="backbutton" onclick="history.back()">←</a>
+    
+    <p class="dish">Pancit</p>
+        
+    <p class="tab">Ingredients</p>
+
+    <div class="column2">
+        <div class="column2-content">
+            <p>1 1/2 lbs. chicken with bones and skin on</p>
+            <p>1/2 lb. bihon noodles rice sticks</p>
+            <p>1/2 lb. sotanghon noodles green bean thread</p>
+            <p>1/2 piece cabbage chopped</p>
+            <p>2 piece carrots julienne</p>
+            <p>1 tablespoon garlic minced</p>
+            <p>1/2 cup flat leaf parsley chopped</p>                   
+        </div>
+
+        <div class="column2-content">
+            <p>1 piece onion sliced</p>
+            <p>3 stalk celery or celery heart, chopped</p>
+            <p>6 cups water</p>
+            <p>1/2 cup soy sauce</p>
+            <p>1/2 teaspoon ground black pepper</p>
+            <p>2 tablespoons cooking oil</p>       
+        </div>
+    </div>
+
+    <p class="tab">Procedures</p>
+
+    <div class="column1-1">
+        <div></div>
+        <div class="column1-content1">
+            <p>1.	Pour 6 cups of water in a cooking pot. Let boil. Put-in the chicken and boil for 30 minutes.</p>
+            <p>2.	Remove the boiled chicken from the cooking pot. Let it cool down. Shred the meat and discard the bones. Set aside. Note: do not throw the water yet, we will use it later as chicken stock.</p>
+            <p>3.	Meanwhile, soak the sotanghon and bihon noodles in water for 10 minutes. Set aside. Note: do this by using a large mixing bowl and fill it with tap water.</p>
+            <p>4.	Heat a large pan. Pour-in 2 tablespoons cooking oil.</p>
+            <p>5.	Let the oil get hot then stir-fry the cabbage and carrots for 3 to 5 minutes. Remove from the pan and set aside.</p>
+            <p>6.	On the same pan, heat the remaining cooking oil. Once the oil becomes smoking hot, saute the onion, celery, and garlic.</p>
+            <p>7.	Add the ground black pepper and shredded chicken. Cook for 3 to 5 minutes.</p>
+            <p>8.	Pour-in soy sauce and 1 cup of chicken stock (this is the water that was used to boil the chicken). Stir and let boil. Cook for 2 minutes more.</p>
+            <p>9.	Add the soaked noodles. Toss the noodles until all the ingredients are well blended. If the noodles is somewhat dry, add a cup of chicken stock and continue to toss until the liquid is absorbed.</p>
+            <p>10.	Put-in the stir-fried cabbage and carrots. Toss.</p>
+            <p>11.	Transfer to a serving plate. Serve with lemon or calamansi.</p>
+            <p>12.	Share and enjoy!</p>            
+        </div>
+        <div></div>
+    </div>
+
+    <div class="rate-container">
+        <p class="review">Rate the recipe!</p>
+            <div class="send">
+                <div class="text">Thank you for your rating!</div>
+            </div>
+        <div class="rating">
+            <input type="radio" id="five" name="stars">
+            <label for="five"></label>
+            <input type="radio" id="four" name="stars">
+            <label for="four"></label>
+            <input type="radio" id="three" name="stars">
+            <label for="three"></label>
+            <input type="radio" id="two" name="stars">
+            <label for="two"></label>
+            <input type="radio" id="one" name="stars">
+            <label for="one"></label>
+            <form action="#">
+            <header></header>
+                <div class="areatext">
+                    <textarea cols="25" placeholder="What did you think about this recipe? Did you make any changes to this recipe?"></textarea>
+                </div>
+                <div class="bttn">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        const bttn = document.querySelector("button");
+        const send = document.querySelector(".send");
+        const rating = document.querySelector(".rating");
+        bttn.onclick = ()=> {
+            rating.style.display = "none";
+            send.style.display = "block";
+            return false;
+        }
+    </script>
+
+</body>
+</html>

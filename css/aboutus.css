@@ -1,0 +1,131 @@
+/*---------------- Body - PAGE03 ----------------*/
+
+.aboutMembers {
+    box-shadow: 0 4px 8px 0 rgb(163, 163, 163);
+    margin: 30px;
+    background-color: #FFA500;
+    border-radius: 15px;
+}
+
+.aboutMembers p {
+    text-align: center;
+    font-size: 3em;
+    padding: .4em;
+}
+
+.aboutustitle {
+    text-align: center;
+}
+
+.aboutusgrid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    grid-gap: 50px;
+    margin: 50px;
+    border-radius: 100px;
+}
+
+/*.aboutusImg{}*/
+
+.member {
+    background-color: bisque;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    box-shadow: 0 4px 8px 0 rgb(163, 163, 163);
+    border-radius: 15px;
+}
+
+.last {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    padding: 10px;
+    grid-gap: 10px;
+}
+
+.aboutusgrid h2{
+    font-size: 30px;
+    background-color:#FFA500;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.aboutusgrid p{
+    color: purple;
+    font-size: 22.5px;
+}
+
+.container {
+    padding: 0 16px;
+}
+
+@media (max-width:1000px){
+    .aboutusgrid{
+        display: grid;
+        grid-template-columns: auto auto;
+        margin: 30px;
+    }
+
+    .gridFiller {
+        display: none;
+    }
+}
+
+@media (max-width:700px){
+    .aboutusgrid{
+        display: grid;
+        grid-template-columns: auto;
+        margin: 30px;
+    }
+
+    .gridFiller {
+        display: none;
+    }
+}
+
+.contact {
+    border: none;
+    display: inline-block;
+    padding: 15px;
+    color: white;
+    background-color: orange;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.contact:hover {
+    transform: scale(1.025);
+    transition: transform .2s;
+    background-color: lilac;
+}
+
+/*-------------------- Mission and Vision ------------------*/
+
+.mission { border-radius: 15px; box-shadow: 0 4px 8px 0 rgb(163, 163, 163); margin: 3em 9em 0em;}
+
+.mission-content { padding: 3em;}
+
+.mission p {
+text-align: center;
+font-size: 2em;
+margin: 0em 1em 0em;
+}
+
+.vision { border-radius: 15px; box-shadow: 0 4px 8px 0 rgb(163, 163, 163); margin: 3em 9em 0em;}
+
+.vision-content { padding: 3em;}
+
+.vision p {
+text-align: center;
+font-size: 2em;
+margin: 0em 1em 0em;
+}
+
+@media (max-width:1000px) {
+    .mission, .vision {
+        margin: 1em 1em 1em;
+    }
+}

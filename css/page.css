@@ -1,0 +1,523 @@
+@font-face { font-family: Capsuula; src: url(../links/Capsuula.ttf);}
+
+body{margin: 0px 0px 0px; font-family: Capsuula; background-color: bisque;}
+
+@media (max-width:700px){ body {margin: -20px 0px 0px;}}
+
+*::-webkit-scrollbar {
+    width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    background: orange;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    border: 3px solid orange;
+}
+
+/*---------------- Navigation bar ----------------*/
+
+.navtitle {
+    display: block;
+    padding: .4em;
+    font-size: 2.4em;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+@media (max-width:700px) {
+    .nav01 ul li {
+        display: block;
+    }
+
+    .nav01 ul li .button {
+        padding: .4em;
+    }
+
+    .nav01 {
+        margin-left: -35px;
+    }
+
+    .navtitle { display: none;}
+}
+
+.nav01 { position: relative; display: block; height: 75px;}
+
+.nav01 ul { list-style: none; background-color: orange;  overflow: hidden; position: fixed; width: 100%; top: -16; z-index: 1;}
+
+.nav01 li { float: left; }
+
+.nav01 .button {
+    display: block;
+    padding: .75em;
+    font-size: 1.75em;
+    color: white;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: rgb(202, 131, 0);
+    transform: scale(1.1);
+    transition: .2s;
+}
+
+.backbutton {
+    font-size: 60px;
+    text-align: center;
+    color: orange;
+    border: 2px solid orange; 
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    display: block;
+    width: 75px;
+    height: 75px;
+    border-radius: 20px; 
+    background-color: white;
+    z-index: 1;
+}
+
+.backbutton:hover {
+    transform: scale(1.2);
+    transition: transform .2s;
+}
+
+/*---------------- Body - Home page ----------------*/
+
+body#home {
+    overflow: hidden;
+}
+
+.slideshows {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 12px;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;    
+}
+
+.slideshows-content {
+    position: absolute;
+    opacity: 0;
+    animation: imageslideshows 61s infinite;
+    color: white;
+    text-shadow: 1px 1px black;
+    display: block;
+    width: 100%;
+    height: 180%;
+}
+
+.slideshows-content img {
+    width: 100%;
+    height: 65%;
+    object-fit: cover;
+    animation: imagezoom 10s infinite;
+}
+
+.slideshows-content:nth-child(1),
+.slideshows-content:nth-child(1) img {
+    animation-delay: 0s;
+}
+.slideshows-content:nth-child(2),
+.slideshows-content:nth-child(2) img {
+    animation-delay: 10s;
+}
+.slideshows-content:nth-child(3),
+.slideshows-content:nth-child(3) img {
+    animation-delay: 20s;
+}
+.slideshows-content:nth-child(4),
+.slideshows-content:nth-child(4) img {
+    animation-delay: 30s;
+}
+.slideshows-content:nth-child(5),
+.slideshows-content:nth-child(5) img {
+    animation-delay: 40s;
+}
+.slideshows-content:nth-child(6),
+.slideshows-content:nth-child(6) img {
+    animation-delay: 50s;
+}
+
+.slideshows-context {
+    max-width: 40%;
+    position: fixed;
+    top: 200px;
+    left: 0;
+    transform: tranlateY(-30%);
+    background-color: rgb(202, 131, 0,.5);
+    padding: 0.8rem 3rem;
+}
+
+.slideshows-context a{
+    font-size: 6em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: white;
+}
+
+.slideshows-context p{
+    font-size: .4em;
+    font-family: Capsuula;
+    letter-spacing: 1px;
+}
+
+@keyframes imageslideshows { 
+    25% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 0;
+    }
+}
+
+@keyframes imagezoom {
+    100%{
+        transform: scale(1.1);
+    }
+}
+
+/*---------------- Body - Recipes page----------------*/
+
+.sec01 ul, .sec02 ul { list-style: none; float: left; }
+
+.sec01 li, .sec02 li { margin: 1em; }
+
+.sec01 a, .sec02 a {
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    text-decoration: none;
+    display: block;
+    padding: 1.25em;
+    width: 39vw;
+    border: 1px solid orange;
+    border-radius: 20px;
+    text-shadow: 1px 1px rgb(255, 166, 0);
+    background-color: orange;
+}
+
+@media (max-width:1810px){
+    .sec02 {
+        position: relative;
+        top: -2.5em;
+    }
+
+    .sec01 a, .sec02 a{
+        width: 80vw;
+    }
+}
+
+@media (max-width:1000px){
+    .sec01 a, .sec02 a{
+        width: 70vw;
+    }
+
+    .sec01 li, .sec02 li{
+        margin: 1em 0em 1em;
+    }
+}
+
+@media (max-width:600px){
+    .sec01 a, .sec02 a{
+        width: 60vw;
+    }
+
+    .sec01 li, .sec02 li{
+        margin: 1em 0em 1em;
+    }
+}
+.cat01 { background-image: url(../images/categories/01.png); background-size: cover;}
+.cat02 { background-image: url(../images/categories/02.png); background-size: cover;}
+.cat03 { background-image: url(../images/categories/03.png); background-size: cover;}
+.cat04 { background-image: url(../images/categories/04.png); background-size: cover;}
+.cat05 { background-image: url(../images/categories/05.png); background-size: cover;}
+.cat06 { background-image: url(../images/categories/06.png); background-size: cover;}
+
+.cat:hover {
+    transform: scale(1.025);
+    transition: transform .2s;
+    filter:brightness(.9);
+}
+
+/*----------------------- Body - PAGE02 -----------------------*/
+
+.recsec01 ul , .recsec02 ul,.recsec03 ul {
+    list-style: none;
+    float: left;
+}
+
+.recsec01 li, .recsec02 li, .recsec03 li {
+    margin-top: 1em;
+    
+}
+
+.recsec01 a, .recsec02 a, .recsec03 a {
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    text-decoration: none;
+    display: block;
+    padding: 0.5em;
+    width: 27vw;
+    height: 3em;
+    border: 1px solid orange;
+    border-radius: 20px;
+    text-shadow: 1px 1px rgb(255, 166, 0);
+    background-color: orange;
+}
+
+@media (max-width:1700px){
+    .recsec01 a, .recsec02 a, .recsec03 a {
+        width: 40vw;
+    }    
+}
+
+@media (max-width:1100px){
+    .recsec01 a, .recsec02 a, .recsec03 a {
+        width: 75vw;
+    }    
+}
+
+@media (max-width:600px){
+    .recsec01 a, .recsec02 a, .recsec03 a {
+        width: 70vw;
+    }    
+}
+
+.rec0101 { background-image: url(../images/categories/cat01/01.png); background-size: cover;}
+.rec0102 { background-image: url(../images/categories/cat01/02.png); background-size: cover;}
+.rec0103 { background-image: url(../images/categories/cat01/03.png); background-size: cover;}
+.rec0104 { background-image: url(../images/categories/cat01/04.png); background-size: cover;}
+.rec0105 { background-image: url(../images/categories/cat01/05.png); background-size: cover;}
+.rec0106 { background-image: url(../images/categories/cat01/06.png); background-size: cover;}
+
+.rec0201 { background-image: url(../images/categories/cat02/01.png); background-size: cover;}
+.rec0202 { background-image: url(../images/categories/cat02/02.png); background-size: cover;}
+.rec0203 { background-image: url(../images/categories/cat02/03.png); background-size: cover;}
+.rec0204 { background-image: url(../images/categories/cat02/04.png); background-size: cover;}
+.rec0205 { background-image: url(../images/categories/cat02/05.png); background-size: cover;}
+.rec0206 { background-image: url(../images/categories/cat02/06.png); background-size: cover;}
+
+.rec0301 { background-image: url(../images/categories/cat03/01.png); background-size: cover;}
+.rec0302 { background-image: url(../images/categories/cat03/02.png); background-size: cover;}
+.rec0303 { background-image: url(../images/categories/cat03/03.png); background-size: cover;}
+.rec0304 { background-image: url(../images/categories/cat03/04.png); background-size: cover;}
+.rec0305 { background-image: url(../images/categories/cat03/05.png); background-size: cover;}
+.rec0306 { background-image: url(../images/categories/cat03/06.png); background-size: cover;}
+
+.rec0401 { background-image: url(../images/categories/cat04/01.png); background-size: cover;}
+.rec0402 { background-image: url(../images/categories/cat04/02.png); background-size: cover;}
+.rec0403 { background-image: url(../images/categories/cat04/03.png); background-size: cover;}
+.rec0404 { background-image: url(../images/categories/cat04/04.png); background-size: cover;}
+.rec0405 { background-image: url(../images/categories/cat04/05.png); background-size: cover;}
+.rec0406 { background-image: url(../images/categories/cat04/06.png); background-size: cover;}
+
+.rec0501 { background-image: url(../images/categories/cat05/01.png); background-size: cover;}
+.rec0502 { background-image: url(../images/categories/cat05/02.png); background-size: cover;}
+.rec0503 { background-image: url(../images/categories/cat05/04.png); background-size: cover;}
+.rec0504 { background-image: url(../images/categories/cat05/03.png); background-size: cover;}
+.rec0505 { background-image: url(../images/categories/cat05/05.png); background-size: cover;}
+.rec0506 { background-image: url(../images/categories/cat05/06.png); background-size: cover;}
+
+.rec0601 { background-image: url(../images/categories/cat06/01.png); background-size: cover;}
+.rec0602 { background-image: url(../images/categories/cat06/02.png); background-size: cover;}
+.rec0603 { background-image: url(../images/categories/cat06/03.png); background-size: cover;}
+.rec0604 { background-image: url(../images/categories/cat06/04.png); background-size: cover;}
+.rec0605 { background-image: url(../images/categories/cat06/05.png); background-size: cover;}
+.rec0606 { background-image: url(../images/categories/cat06/06.png); background-size: cover;}
+
+/*---------------- Body - Recipe Pages ----------------*/
+
+.dish {
+    font-size: 80px; text-align: center; 
+    background-color: rgb(185, 164, 137);
+    margin: -20 0 100 0 ;
+    padding: 2em;
+}
+
+.tab {
+    text-align: center;
+    font-size: xxx-large;
+    font-weight: bolder;
+    color: orange;
+    text-shadow: 1px 1px black;
+}
+
+@media (min-width: 1500px) {
+    .column2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 10px;
+        margin: 0px 150px 0px;
+    }
+}
+.column2-content {
+    text-align: center;
+    font-size: 30px;
+}
+
+.column1 {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 10px;
+}
+
+.column1-1 {
+    display: grid;
+    grid-template-columns: 25% 50%;
+    padding: 10px;
+    margin-bottom: 10em;
+}
+
+.column1-content {
+    text-align: center;
+    font-size: 30px;
+}
+
+.column1-content1 {
+    text-align: left;
+    font-size: 30px;
+}
+
+.review {
+    text-align: center;
+    font-size: 60px;
+    margin-top: -65%;
+    margin-bottom: -80%;
+    font-weight: 400;
+    color: white;
+    text-shadow: 1px 1px black;
+}
+
+.rate-container {
+    display: grid;
+    height: 70%;
+    width: 500px;
+    place-items: center;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 5em;
+    background: orange;
+    padding: 20px 20px 30px 10px;
+    box-shadow: 0 4px 8px 0 rgb(114, 114, 114);
+    border: orange solid 5px;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.rate-container .text {
+    font-size: 64px;
+    font-weight: 300;
+}
+
+.rate-container .send {
+    display: none;
+}
+
+.rating label:before {
+    content: "★";
+}
+
+.rating label {
+    margin-bottom: 5%;
+    font-size: 60px;
+    color: rgb(146, 95, 0);
+    padding:0px 10px;
+    float: right;
+}
+
+.rate-container .rating input {
+    display: none;
+}
+
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label {
+    color: #ffdf2a;
+}
+
+input:checked ~ label {
+    color: #ffdf2a;
+}
+
+input#five:checked ~ label {
+    color: gold;
+    text-shadow: 0px 0px 4px orangered;
+}
+
+#one:checked ~ form header:before {
+    content: "It's horrible 🤮";
+}
+#two:checked ~ form header:before {
+    content: "It's alright 😐";
+}
+#three:checked ~ form header:before {
+    content: "It's good 🙂";
+}
+#four:checked ~ form header:before {
+    content: "It's great 😊";
+}
+#five:checked ~ form header:before {
+    content: "It's perfect 🤩";
+}
+
+.rate-container form {
+    display: none;
+}
+input:checked ~ form {
+    display: block;
+}
+
+form header {
+    width: 100%;
+    font-size: 30px;
+    color: black;
+    margin: 0 0 15px 0;
+    transition: all 0.3 ease;
+    text-align: center;
+}
+
+form .areatext {
+    height: 150px;
+    width: 100%;
+    overflow: hidden;
+}
+
+form .areatext textarea{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: 1px solid black;
+    padding: 5px; 
+    font-size: 16px;
+    resize: none;
+}
+
+form .bttn {
+    height: 40px;
+    width: 100%;
+    margin: 10px 0;
+}
+
+form .bttn button {
+    height: 100%;
+    width: 100%;
+    border: 1px solid rgb(129, 84, 0);
+    outline: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    background: orange;
+    transition: all 0.4 ease;
+    cursor: pointer;
+}
+
+form .bttn button:hover {
+    background:rgb(202, 131, 0);
+}

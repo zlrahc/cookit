@@ -1,0 +1,47 @@
+@font-face { font-family: Capsuula; src: url(../links/Capsuula.ttf);}
+
+/* ------------- Navigation bar - Top --------------*/
+
+nav { margin: 2em; position: fixed; left: 2em; font-family: Capsuula;}
+
+nav a {
+    padding: 0;
+    text-decoration: none;
+}
+
+.navtitle {
+    font-size: 40px;
+    color: orange;
+}
+
+.button {
+    font-size: 25px;
+    margin-left: 70px;
+    color: white;
+    vertical-align: 2.5;
+}
+
+/* --------------------------- Body ---------------------------*/
+
+body{margin: 0;
+     background-image: url(../images/background.png);
+     background-size: cover;
+     font-family: Capsuula;}
+
+.mediumbreak{font-size: 200px;}
+
+.img {
+    margin: auto;
+    width: 60%;
+    text-align: center;
+}
+
+.body01 {
+    margin: auto;
+    width: 60%;
+    text-align: center;
+    vertical-align: middle;
+    color: white;   
+    font-size: 50px;
+
+}

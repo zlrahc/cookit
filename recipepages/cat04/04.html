@@ -1,0 +1,104 @@
+<html>
+<head>
+    <link rel="stylesheet" href="../../css/page.css">
+    <link rel="icon" href="../../images/logo.png">
+    <title>CooKit - Spaghetti</title>
+</head>
+
+<body>
+
+    <!------------------ Navigation bar - Top --------------------->
+ 
+    <nav class="nav01">
+        <ul>
+            <li><a class="navtitle" href="../../index.html">CooKit</a></li>
+            <li><a class="button" href="../../page01.html">HOME</a></li>
+            <li><a class="button" href="../../page02.html">RECIPES</a></li> 
+            <li><a class="button" href="../../page03.html">ABOUT US</a></li>
+            <li><a class="button" href="../../page04.html">CONTACT US</a></li>
+        </ul>
+    </nav>
+
+    <!--------------------------- Body ----------------------------->
+    
+    <a class="backbutton" onclick="history.back()">←</a>
+    
+    <p class="dish">Spaghetti</p>
+        
+    <p class="tab">Ingredients</p>
+
+    <div class="column2">
+        <div class="column2-content">
+            <p>1 lb. spaghetti noodle</p>
+            <p>1 lb. Italian tomato sauce </p>
+            <p>8 ounces tomato paste</p>
+            <p>2 tablespoons minced onion</p>
+            <p>2 tablespoons minced garlic</p>
+            <p>2 tablespoons oil</p>
+            <p>1 lb. ground pork</p>
+        </div>
+
+        <div class="column2-content">
+            <p>1/2 cup minced carrots and red peppers</p>
+            <p>2 cups diced or thinly sliced hot dogs</p>
+            <p>1 cup water</p>
+            <p>1 tablespoon salt</p>
+            <p>1 teaspoon seasoning mix</p>
+            <p>7 ounces evaporated milk</p>
+            <p>grated cheese for topping</p>
+        </div>
+    </div>
+
+    <p class="tab">Procedures</p>
+
+    <div class="column1-1">
+        <div></div>
+        <div class="column1-content1">
+            <p>1.	Cook the noodles according to package directions. Set aside.</p>
+            <p>2.	Place the garlic, onion, and oil in a large saucepan or skillet. Saute for 3-4 minutes or until soft and fragrant. Add the ground pork and brown the meat until it’s completely cooked.</p>
+            <p>3.	Add the minced vegetables and hot dog pieces and stir to combine. Add the water and allow the mixture to simmer for 10-15 minutes. Add the tomato sauce and tomato paste to the meat and continue to simmer the mixture for another 10-15 minutes. Add the evaporated milk and salt and stir until incorporated.</p>
+            <p>4.	Combine the noodles and the sauce in a large pot or mixing bowl. Top with grated cheese. At Cherne they grate a processed cheese similar to Velveeta and let it melt into the top layer of the spaghetti.</p>
+        </div>
+        <div></div>
+    </div>
+
+    <div class="rate-container">
+        <p class="review">Rate the recipe!</p>
+            <div class="send">
+                <div class="text">Thank you for your rating!</div>
+            </div>
+        <div class="rating">
+            <input type="radio" id="five" name="stars">
+            <label for="five"></label>
+            <input type="radio" id="four" name="stars">
+            <label for="four"></label>
+            <input type="radio" id="three" name="stars">
+            <label for="three"></label>
+            <input type="radio" id="two" name="stars">
+            <label for="two"></label>
+            <input type="radio" id="one" name="stars">
+            <label for="one"></label>
+            <form action="#">
+            <header></header>
+                <div class="areatext">
+                    <textarea cols="25" placeholder="What did you think about this recipe? Did you make any changes to this recipe?"></textarea>
+                </div>
+                <div class="bttn">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        const bttn = document.querySelector("button");
+        const send = document.querySelector(".send");
+        const rating = document.querySelector(".rating");
+        bttn.onclick = ()=> {
+            rating.style.display = "none";
+            send.style.display = "block";
+            return false;
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+<html>
+<head>
+    <link rel="stylesheet" href="../../css/page.css">
+    <link rel="icon" href="../../images/logo.png">
+    <title>CooKit - Pork Sisig</title>
+</head>
+
+<body>
+
+    <!------------------ Navigation bar - Top --------------------->
+ 
+    <nav class="nav01">
+        <ul>
+            <li><a class="navtitle" href="../../index.html">CooKit</a></li>
+            <li><a class="button" href="../../page01.html">HOME</a></li>
+            <li><a class="button" href="../../page02.html">RECIPES</a></li> 
+            <li><a class="button" href="../../page03.html">ABOUT US</a></li>
+            <li><a class="button" href="../../page04.html">CONTACT US</a></li>
+        </ul>
+    </nav>
+
+    <!--------------------------- Body ----------------------------->
+    
+    <a class="backbutton" onclick="history.back()">←</a>
+    
+    <p class="dish">Pork Sisig</p>
+        
+    <p class="tab">Ingredients</p>
+
+    <div class="column1">
+        <div class="column1-content">
+            <p>1-1/2 lbs pork cheeks (or 2 lbs deboned pork hocks)</p>
+            <p>1/2 lb beef or pork tongue</p>
+            <p>1/2 lb beef or pork heart</p>
+            <p>1/2 lb liver (pork, beef or chicken) </p>
+            <p>2 cups water (for boiling) </p>
+            <p>1 cup pineapple juice (for boiling) </p>
+            <p>1 tsp whole black peppers (for boiling) </p>            
+        </div>
+    </div>
+
+    <p class="tab">Procedures</p>
+
+    <div class="column1-1">
+        <div></div>
+        <div class="column1-content1">
+            <p>1.	Pour the water in a pan and bring to a boil Add salt and pepper.</p>
+            <p>2.	Put-in the pig’s ears and pork belly then simmer for 40 minutes to 1 hour (or until tender).</p>
+            <p>3.	Remove the boiled ingredients from the pot then drain excess water</p>
+            <p>4.	Grill the boiled pig ears and pork belly until done</p>
+            <p>5.	Chop the pig ears and pork belly into fine pieces</p>
+            <p>6.	In a wide pan, melt the butter or margarine. Add the onions. Cook until onions are soft.</p>
+            <p>7.	Put-in the ginger and cook for 2 minutes</p>
+            <p>8.	Add the chicken liver. Crush the chicken liver while cooking it in the pan.</p>
+            <p>9.	Add the chopped pig ears and pork belly. Cook for 10 to 12 minutes</p>
+            <p>10.	Put-in the soy sauce, garlic powder, and chili. Mix well</p>
+            <p>11.	Add salt and pepper to taste</p>
+            <p>12.	Put-in the mayonnaise and mix with the other ingredients</p>
+            <p>13.	Transfer to a serving plate. Top with chopped green onions and raw egg.</p>
+            <p>14.	Serve hot. Share and Enjoy (add the lemon or calamansi before eating)</p>
+        </div>
+        <div></div>
+    </div>
+
+    <div class="rate-container">
+        <p class="review">Rate the recipe!</p>
+            <div class="send">
+                <div class="text">Thank you for your rating!</div>
+            </div>
+        <div class="rating">
+            <input type="radio" id="five" name="stars">
+            <label for="five"></label>
+            <input type="radio" id="four" name="stars">
+            <label for="four"></label>
+            <input type="radio" id="three" name="stars">
+            <label for="three"></label>
+            <input type="radio" id="two" name="stars">
+            <label for="two"></label>
+            <input type="radio" id="one" name="stars">
+            <label for="one"></label>
+            <form action="#">
+            <header></header>
+                <div class="areatext">
+                    <textarea cols="25" placeholder="What did you think about this recipe? Did you make any changes to this recipe?"></textarea>
+                </div>
+                <div class="bttn">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        const bttn = document.querySelector("button");
+        const send = document.querySelector(".send");
+        const rating = document.querySelector(".rating");
+        bttn.onclick = ()=> {
+            rating.style.display = "none";
+            send.style.display = "block";
+            return false;
+        }
+    </script>
+
+</body>
+</html>

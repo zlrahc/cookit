@@ -1,0 +1,96 @@
+<html>
+<head>
+    <link rel="stylesheet" href="../../css/page.css">
+    <link rel="icon" href="../../images/logo.png">
+    <title>CooKit - Tiramisu</title>
+</head>
+
+<body>
+
+    <!------------------ Navigation bar - Top --------------------->
+ 
+    <nav class="nav01">
+        <ul>
+            <li><a class="navtitle" href="../../index.html">CooKit</a></li>
+            <li><a class="button" href="../../page01.html">HOME</a></li>
+            <li><a class="button" href="../../page02.html">RECIPES</a></li> 
+            <li><a class="button" href="../../page03.html">ABOUT US</a></li>
+            <li><a class="button" href="../../page04.html">CONTACT US</a></li>
+        </ul>
+    </nav>
+
+    <!--------------------------- Body ----------------------------->
+    
+    <a class="backbutton" onclick="history.back()">←</a>
+    
+    <p class="dish">Tiramisu</p>
+        
+    <p class="tab">Ingredients</p>
+
+    <div class="column1">
+        <div class="column1-content">
+            <p>1 1/2 cups espresso , (or strong coffee), room temperature</p>
+            <p>6 Tbsp golden rum, divided</p>
+            <p>40 ladyfingers</p>
+            <p>6 egg yolks, (large) </p>
+            <p>3/4 cup granulated sugar</p>
+            <p>16 oz mascarpone, at room temp for 15 minutes</p>
+            <p>2 cups heavy whipping cream, cold*</p>
+            <p>2-3 Tbsp unsweetened cocoa powder, to dust the top</p> 
+        </div>
+    </div>
+
+    <p class="tab">Procedures</p>
+
+    <div class="column1-1">
+        <div></div>
+        <div class="column1-content1">
+            <p>1.	Quickly dip half of the ladyfingers in coffee syrup and arrange in a 9x13 casserole</p>
+            <p>2.	Combine 6 yolks and 3/4 cup sugar and continue whisking over a saucepan of simmering water for 9-10 minutes. Remove from steam and whisk for a few minutes to help it cool cool.</p>
+            <p>3.	Beat 16 oz mascarpone with 3 Tbsp rum then beat in the cooled yolk mixture until blended.</p>
+            <p>4.	Whip 2 cups cold heavy cream to stiff peaks. With a spatula, fold half into the mascarpone mixture then fold in the remaining half until blended.</p>
+            <p>5.	Spread half of the cream over the first layer of ladyfingers. Dip the remaining ladyfingers and arrange over the cream. Spread on remaining cream. Cover and refrigerate overnight then dust with cocoa powder and serve.</p>
+        </div>
+        <div></div>
+    </div>
+
+    <div class="rate-container">
+        <p class="review">Rate the recipe!</p>
+            <div class="send">
+                <div class="text">Thank you for your rating!</div>
+            </div>
+        <div class="rating">
+            <input type="radio" id="five" name="stars">
+            <label for="five"></label>
+            <input type="radio" id="four" name="stars">
+            <label for="four"></label>
+            <input type="radio" id="three" name="stars">
+            <label for="three"></label>
+            <input type="radio" id="two" name="stars">
+            <label for="two"></label>
+            <input type="radio" id="one" name="stars">
+            <label for="one"></label>
+            <form action="#">
+            <header></header>
+                <div class="areatext">
+                    <textarea cols="25" placeholder="What did you think about this recipe? Did you make any changes to this recipe?"></textarea>
+                </div>
+                <div class="bttn">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        const bttn = document.querySelector("button");
+        const send = document.querySelector(".send");
+        const rating = document.querySelector(".rating");
+        bttn.onclick = ()=> {
+            rating.style.display = "none";
+            send.style.display = "block";
+            return false;
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+<html>
+<head>
+    <link rel="stylesheet" href="../../css/page.css">
+    <link rel="icon" href="../../images/logo.png">
+    <title>CooKit - Egg Wrap Sandwich</title>
+</head>
+
+<body>
+
+    <!------------------ Navigation bar - Top --------------------->
+ 
+    <nav class="nav01">
+        <ul>
+            <li><a class="navtitle" href="../../index.html">CooKit</a></li>
+            <li><a class="button" href="../../page01.html">HOME</a></li>
+            <li><a class="button" href="../../page02.html">RECIPES</a></li> 
+            <li><a class="button" href="../../page03.html">ABOUT US</a></li>
+            <li><a class="button" href="../../page04.html">CONTACT US</a></li>
+        </ul>
+    </nav>
+
+    <!--------------------------- Body ----------------------------->
+    
+    <a class="backbutton" onclick="history.back()">←</a>
+    
+    <p class="dish">Egg Wrap Sandwich</p>
+        
+    <p class="tab">Ingredients</p>
+
+    <div class="column2">
+        <div class="column2-content">
+            <p>¼ Onion</p>
+            <p>Lettuce</p>
+            <p>1 Tomato</p>
+            <p>1 Avocado</p>
+            <p>1 pinch of salt</p>
+            <p>0.5 tsp crushes red pepper</p>
+        </div>
+
+        <div class="column2-content">    
+            <p>1 pinch of pepper(optional) </p>
+            <p>1tsp of lemon juice</p>
+            <p>1tsp of Olive oil</p>
+            <p>1(145g) boiled potato</p>
+            <p>2tbsp of mayonnaise</p>            
+        </div>
+    </div>
+    
+    <p class="tab">Procedures</p>
+
+    <div class="column1-1">
+        <div></div>
+        <div class="column1-content1">
+            <p>1.	Slice the onion thinly</p>
+            <p>2.	1 Avocado. Cut small.  Scoop out only the kernels with a spoon.  Gently mash thoroughly.</p>
+            <p>3.	1 Boiled potato. Mash it hot</p>
+            <p>4.	1 Pinch salt. Crushed red pepper. A little pepper powder</p>
+            <p>5.	Put Milk and Mayonnaise and mix it well. Potato Spread complete.</p>
+            <p>6.	2tbsp(30g) Mayonnaise, 1tbsp(15g) Honey mustard,  1tbsp(15g) Honey, .1tsp Lemon juice, 2tbsp Chopped and pickled cucumber, Mix all ingredients well. Sandwich Sauce Completion</p>
+            <p>7.	 Plain flour, Mix the flour well, 6 Eggs (small size), 6 Pinches of salt and Mix flour with eggs. It does not tear easily and can make smooth egg paper.</p>
+            <p>8.	Strain the debris through a sieve</p>
+            <p>9.	Coat a 28cm pan with cooking oil, then wipe off the cooking oil a little, Pour half an egg, </p>
+            <p>10.	Low heat</p>
+            <p>11.	04:11</p>
+            <p>12.	Wait patiently until the top is cooked</p>
+            <p>13.	Coat a 28cm pan with cooking oil, then wipe off the cooking oil a little. Pour half an egg. Low heat. Wait patiently until the top is cooked</p>
+            <p>14.	If the top is all hardened. Then quickly turn over. Turn off the stove and cook with the remaining heat.</p>
+            <p>15.	Beautifully finished yellow duvet with no burnt spots. After cooling for a while</p>
+            <p>16.	Trim the edges slightly (optional)</p>
+            <p>17.	Put the sauce on first. Potatoes go first. Spread the potatoes thinly. Romaine Lettuce. After unfolding several</p>
+            <p>18.	Avocado Sandwich this time. Apply the same sauce first. Sprinkle plenty of avocado. Spread evenly</p>
+            <p>19.	It is better to wrap it in plastic wrap so that the ingredients do not come out when eating. Cut in half.</p>
+            <p>20.	Eating while gently peeling the plastic wrap prevents vegetables from escaping.</p>
+        </div>
+    </div>
+
+    <div class="rate-container">
+        <p class="review">Rate the recipe!</p>
+            <div class="send">
+                <div class="text">Thank you for your rating!</div>
+            </div>
+        <div class="rating">
+            <input type="radio" id="five" name="stars">
+            <label for="five"></label>
+            <input type="radio" id="four" name="stars">
+            <label for="four"></label>
+            <input type="radio" id="three" name="stars">
+            <label for="three"></label>
+            <input type="radio" id="two" name="stars">
+            <label for="two"></label>
+            <input type="radio" id="one" name="stars">
+            <label for="one"></label>
+            <form action="#">
+            <header></header>
+                <div class="areatext">
+                    <textarea cols="25" placeholder="What did you think about this recipe? Did you make any changes to this recipe?"></textarea>
+                </div>
+                <div class="bttn">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        const bttn = document.querySelector("button");
+        const send = document.querySelector(".send");
+        const rating = document.querySelector(".rating");
+        bttn.onclick = ()=> {
+            rating.style.display = "none";
+            send.style.display = "block";
+            return false;
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<html>
+<head>
+    <link rel="stylesheet" href="../../css/page.css">
+    <link rel="icon" href="../../images/logo.png">
+    <title>CooKit - Chicken Adobo</title>
+</head>
+
+<body>
+
+    <!------------------ Navigation bar - Top --------------------->
+ 
+    <nav class="nav01">
+        <ul>
+            <li><a class="navtitle" href="../../index.html">CooKit</a></li>
+            <li><a class="button" href="../../page01.html">HOME</a></li>
+            <li><a class="button" href="../../page02.html">RECIPES</a></li> 
+            <li><a class="button" href="../../page03.html">ABOUT US</a></li>
+            <li><a class="button" href="../../page04.html">CONTACT US</a></li>
+        </ul>
+    </nav>
+
+    <!--------------------------- Body ----------------------------->
+    
+    <a class="backbutton" onclick="history.back()">←</a>
+    
+    <p class="dish">Chicken Adobo</p>
+        
+    <p class="tab">Ingredients</p>
+
+    <div class="column2">
+        <div class="column2-content">
+            <p>1/2 kilo chicken leg (drumstick choice cuts) </p>
+            <p>3 pcs dried bay leaves</p>
+            <p>4 tbsp soy sauce</p>
+            <p>4 tbsp vinegar</p>
+            <p>3 cloves garlic, minced</p>
+            <p>1 medium sized onion, sliced</p>
+            <p>1 thumb sized ginger, thinly sliced</p>       
+        </div>
+
+        <div class="column2-content">
+            <p>1 pc Red Chili ( Siling Haba ) seeded thinly sliced</p>
+            <p>1/3 cup water</p>
+            <p>3 tbsp Canola cooking oil</p>
+            <p>1 tsp peppercorns</p>
+            <p>salt and pepper</p>
+            <p>Green Onions or Scallions for garnish (optional)</p>            
+        </div>
+    </div>
+
+    <p class="tab">Procedures</p>
+
+    <div class="column1-1">
+        <div></div>
+        <div class="column1-content1">
+            <p>1.	In a large Wok, add  Canola oil then saute Onion, Garlic, Ginger and Chicken for 8 to 10 minutes</p>
+            <p>2.	Add pepper, peppercorns, bay leaf and Siling haba ( red Chili ) then saute for another 2 minutes</p>
+            <p>3.	Now add the vinegar, water and soy sauce then bring to a boil.</p>
+            <p>4.	Simmer for five minutes, add salt to taste.</p>
+            <p>5.	Garnish with green onions then Serve hot with Rice</p>
+        </div>
+    </div>
+
+    <div class="rate-container">
+        <p class="review">Rate the recipe!</p>
+            <div class="send">
+                <div class="text">Thank you for your rating!</div>
+            </div>
+        <div class="rating">
+            <input type="radio" id="five" name="stars">
+            <label for="five"></label>
+            <input type="radio" id="four" name="stars">
+            <label for="four"></label>
+            <input type="radio" id="three" name="stars">
+            <label for="three"></label>
+            <input type="radio" id="two" name="stars">
+            <label for="two"></label>
+            <input type="radio" id="one" name="stars">
+            <label for="one"></label>
+            <form action="#">
+            <header></header>
+                <div class="areatext">
+                    <textarea cols="25" placeholder="What did you think about this recipe? Did you make any changes to this recipe?"></textarea>
+                </div>
+                <div class="bttn">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        const bttn = document.querySelector("button");
+        const send = document.querySelector(".send");
+        const rating = document.querySelector(".rating");
+        bttn.onclick = ()=> {
+            rating.style.display = "none";
+            send.style.display = "block";
+            return false;
+        }
+    </script>
+
+</body>
+</html>

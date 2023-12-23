@@ -1,0 +1,108 @@
+<html>
+<head>
+    <link rel="stylesheet" href="../../css/page.css">
+    <link rel="icon" href="../../images/logo.png">
+    <title>CooKit - Chicken Afritada</title>
+</head>
+
+<body>
+
+    <!------------------ Navigation bar - Top --------------------->
+ 
+    <nav class="nav01">
+        <ul>
+            <li><a class="navtitle" href="../../index.html">CooKit</a></li>
+            <li><a class="button" href="../../page01.html">HOME</a></li>
+            <li><a class="button" href="../../page02.html">RECIPES</a></li> 
+            <li><a class="button" href="../../page03.html">ABOUT US</a></li>
+            <li><a class="button" href="../../page04.html">CONTACT US</a></li>
+        </ul>
+    </nav>
+
+    <!--------------------------- Body ----------------------------->
+    
+    <a class="backbutton" onclick="history.back()">←</a>
+    
+    <p class="dish">Chicken Afritada</p>
+        
+    <p class="tab">Ingredients</p>
+
+    <div class="column2">
+        <div class="column2-content">
+            <p>1 kilo chicken drumstick</p>
+            <p>1 tablespoon salt</p>
+            <p>1 tablespoon ground black pepper adjust according to taste</p>
+            <p>2 pcs small carrots diced</p>
+            <p>2 pcs potatoes diced and soaked in water</p>
+            <p>1 head garlic minced</p>
+            <p>1 piece onion chopped</p>
+            <p>2 pcs tomato sliced</p>
+        </div>
+
+        <div class="column2-content">
+            <p>3 pieces small red bell peppers diced</p>
+            <p>3 pieces laurel leaves</p>
+            <p>2 cups water</p>
+            <p>1 pack Tomato Sauce 200 grams</p>
+            <p>1 tbsp Tomato paste</p>
+            <p>1 tbsp Liver spread</p>
+            <p>1 chicken cube</p>   
+        </div>
+    </div>
+
+    <p class="tab">Procedures</p>
+
+    <div class="column1-1">
+        <div></div>
+        <div class="column1-content1">
+            <p>1.	Heat oil in a skillet over medium heat.</p>
+            <p>2.	Fry carrots and potatoes until edges are lightly browned. Set aside.</p>
+            <p>3.	Sear chicken for 2-3 minutes each side. Remove from oil and set aside.</p>
+            <p>4.	In the same skillet with oil. Saute garlic and onion until aromatic and limp.</p>
+            <p>5.	Pour in the tomato sauce and 1 cup water. Turn heat to low and let it simmer for 5-10 minutes until the tomato sauce loses some of its sourness.</p>
+            <p>6.	Add the chicken and ¼ - ½ cup water or as needed. Season with salt. Cover and simmer for another 30-40 minutes or until the chicken are cooked through and the sauce is reduced with the oil floating on the surface.</p>
+            <p>7.	Add the potatoes, carrots and bell pepper, butter, potted meat and grated cheese. Cook for another 5 minutes.</p>
+            <p>8.	Transfer to a serving dish and serve with hot rice.</p>
+        </div>
+    </div>
+
+    <div class="rate-container">
+        <p class="review">Rate the recipe!</p>
+            <div class="send">
+                <div class="text">Thank you for your rating!</div>
+            </div>
+        <div class="rating">
+            <input type="radio" id="five" name="stars">
+            <label for="five"></label>
+            <input type="radio" id="four" name="stars">
+            <label for="four"></label>
+            <input type="radio" id="three" name="stars">
+            <label for="three"></label>
+            <input type="radio" id="two" name="stars">
+            <label for="two"></label>
+            <input type="radio" id="one" name="stars">
+            <label for="one"></label>
+            <form action="#">
+            <header></header>
+                <div class="areatext">
+                    <textarea cols="25" placeholder="What did you think about this recipe? Did you make any changes to this recipe?"></textarea>
+                </div>
+                <div class="bttn">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        const bttn = document.querySelector("button");
+        const send = document.querySelector(".send");
+        const rating = document.querySelector(".rating");
+        bttn.onclick = ()=> {
+            rating.style.display = "none";
+            send.style.display = "block";
+            return false;
+        }
+    </script>
+
+</body>
+</html>

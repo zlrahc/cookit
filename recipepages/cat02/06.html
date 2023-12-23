@@ -1,0 +1,106 @@
+<html>
+<head>
+    <link rel="stylesheet" href="../../css/page.css">
+    <link rel="icon" href="../../images/logo.png">
+    <title>CooKit - Tokwa't Baboy</title>
+</head>
+
+<body>
+
+    <!------------------ Navigation bar - Top --------------------->
+ 
+    <nav class="nav01">
+        <ul>
+            <li><a class="navtitle" href="../../index.html">CooKit</a></li>
+            <li><a class="button" href="../../page01.html">HOME</a></li>
+            <li><a class="button" href="../../page02.html">RECIPES</a></li> 
+            <li><a class="button" href="../../page03.html">ABOUT US</a></li>
+            <li><a class="button" href="../../page04.html">CONTACT US</a></li>
+        </ul>
+    </nav>
+
+    <!--------------------------- Body ----------------------------->
+    
+    <a class="backbutton" onclick="history.back()">←</a>
+    
+    <p class="dish">Tokwa't Baboy</p>
+        
+    <p class="tab">Ingredients</p>
+
+    <div class="column2">
+        <div class="column2-content">
+            <p>1/2 kilo pork (cut into chunk cubes) </p>
+            <p>5 pieces tokwa (bean curd or tofu) </p>
+            <p>2 heads garlic (minced) </p>
+            <p>1 cup vinegar</p>
+            <p>1 cup soy sauce</p>      
+        </div>
+
+        <div class="column2-content">
+            <p>1 teaspoon salt</p>
+            <p>1 teaspoon brown sugar</p>
+            <p>3 small onions (diced) </p>
+            <p>1 pc finger chili, diagonally cut</p>
+            <p>1/4 cup scallions, sliced</p>    
+        </div>
+    </div>
+
+    <p class="tab">Procedures</p>
+
+    <div class="column1-1">
+        <div></div>
+        <div class="column1-content1">
+            <p>1.	Heat cooking oil in a wok or cooking pot. Add tofu. Deep fry until outer part turns golden brown and crisp. Remove from the wok. Set aside.</p>
+            <p>2.	Transfer 3 tablespoons cooking oil used to fry tofu on a clean pan. Heat and sauté garlic until it starts to brown. Add onion. Continue sautéing until the later softens.</p>
+            <p>3.	Add pork. Cook until the outer part turns light brown.</p>
+            <p>4.	Pour soy sauce. Continue sautéing until liquid reduces to half.</p>
+            <p>5.	Add pineapple juice and vinegar. Cover and let boil.</p>
+            <p>6.	Stir and then add salted black beans. Cover once more. Continue cooking between low to medium heat for 35 minutes.</p>
+            <p>7.	Add water and brown sugar. Cook on a covered pan until pork gets very tender. Note: I usually cook it for 40 minutes in low heat.</p>
+            <p>8.	Add star anise. Cook for 5 minutes. Remove star anise from the wok.</p>
+            <p>9.	Season with ground black pepper and then add fried tofu. Stir and cook for 2 minutes.</p>
+            <p>10.	Transfer to a serving</p>
+        </div>
+        <div></div>
+    </div>
+
+    <div class="rate-container">
+        <p class="review">Rate the recipe!</p>
+            <div class="send">
+                <div class="text">Thank you for your rating!</div>
+            </div>
+        <div class="rating">
+            <input type="radio" id="five" name="stars">
+            <label for="five"></label>
+            <input type="radio" id="four" name="stars">
+            <label for="four"></label>
+            <input type="radio" id="three" name="stars">
+            <label for="three"></label>
+            <input type="radio" id="two" name="stars">
+            <label for="two"></label>
+            <input type="radio" id="one" name="stars">
+            <label for="one"></label>
+            <form action="#">
+            <header></header>
+                <div class="areatext">
+                    <textarea cols="25" placeholder="What did you think about this recipe? Did you make any changes to this recipe?"></textarea>
+                </div>
+                <div class="bttn">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        const bttn = document.querySelector("button");
+        const send = document.querySelector(".send");
+        const rating = document.querySelector(".rating");
+        bttn.onclick = ()=> {
+            rating.style.display = "none";
+            send.style.display = "block";
+            return false;
+        }
+    </script>
+
+</body>
+</html>

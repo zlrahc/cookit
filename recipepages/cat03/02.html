@@ -1,0 +1,106 @@
+<html>
+<head>
+    <link rel="stylesheet" href="../../css/page.css">
+    <link rel="icon" href="../../images/logo.png">
+    <title>CooKit - Chicken Curry</title>
+</head>
+
+<body>
+
+    <!------------------ Navigation bar - Top --------------------->
+ 
+    <nav class="nav01">
+        <ul>
+            <li><a class="navtitle" href="../../index.html">CooKit</a></li>
+            <li><a class="button" href="../../page01.html">HOME</a></li>
+            <li><a class="button" href="../../page02.html">RECIPES</a></li> 
+            <li><a class="button" href="../../page03.html">ABOUT US</a></li>
+            <li><a class="button" href="../../page04.html">CONTACT US</a></li>
+        </ul>
+    </nav>
+
+    <!--------------------------- Body ----------------------------->
+    
+    <a class="backbutton" onclick="history.back()">←</a>
+    
+    <p class="dish">Chicken Curry</p>
+        
+    <p class="tab">Ingredients</p>
+
+    <div class="column2">
+        <div class="column2-content">
+            <p>1 kilo chicken</p>
+            <p>2 medium sized potatoes chopped</p>
+            <p>1 big carrot sliced</p>
+            <p>1 tbsp garlic minced</p>
+            <p>3 stalks celery cut into 2 inches length</p>
+            <p>1 medium onion chopped</p>          
+        </div>
+
+        <div class="column2-content">
+            <p>1 small red bell pepper cut into cubes</p>
+            <p>2 tbsp fish sauce</p>
+            <p>1 cup coconut milk</p>
+            <p>2 tbsp curry powder</p>
+            <p>1 thumb ginger cut into strips</p>
+            <p>1 cup water</p>           
+        </div>
+    </div>
+
+    <p class="tab">Procedures</p>
+
+    <div class="column1-1">
+        <div></div>
+        <div class="column1-content1">
+            <p>1.	Cut the chicken into pieces. Leave the chicken bone-in. If you prefer boneless chicken meat, then de-bone the chicken.</p>
+            <p>2.	Heat up a deep pot and add the oil.</p>
+            <p>3.	Fry the potato and carrots for 2 minutes  and set aside.</p>
+            <p>4.	Sauté Chicken together with garlic, onion and ginger.</p>
+            <p>5.	When garlic is  light brown in color add fish sauce, and curry powder.</p>
+            <p>6.	Stir well then add water then cover the pot and lower the heat to medium and simmer until the chicken is tender.</p>
+            <p>7.	Once the chicken is cooked add the red bell pepper, celery, carrot and potato then simmer for 5 minutes</p>
+            <p>8.	Add the coconut milk and mix well. Simmer for another 5 minutes.</p>
+            <p>9.	Serve hot with rice.</p>
+        </div>
+    </div>
+
+    <div class="rate-container">
+        <p class="review">Rate the recipe!</p>
+            <div class="send">
+                <div class="text">Thank you for your rating!</div>
+            </div>
+        <div class="rating">
+            <input type="radio" id="five" name="stars">
+            <label for="five"></label>
+            <input type="radio" id="four" name="stars">
+            <label for="four"></label>
+            <input type="radio" id="three" name="stars">
+            <label for="three"></label>
+            <input type="radio" id="two" name="stars">
+            <label for="two"></label>
+            <input type="radio" id="one" name="stars">
+            <label for="one"></label>
+            <form action="#">
+            <header></header>
+                <div class="areatext">
+                    <textarea cols="25" placeholder="What did you think about this recipe? Did you make any changes to this recipe?"></textarea>
+                </div>
+                <div class="bttn">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        const bttn = document.querySelector("button");
+        const send = document.querySelector(".send");
+        const rating = document.querySelector(".rating");
+        bttn.onclick = ()=> {
+            rating.style.display = "none";
+            send.style.display = "block";
+            return false;
+        }
+    </script>
+
+</body>
+</html>

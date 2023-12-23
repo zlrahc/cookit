@@ -1,0 +1,108 @@
+<html>
+<head>
+    <link rel="stylesheet" href="../../css/page.css">
+    <link rel="icon" href="../../images/logo.png">
+    <title>CooKit - Sinigang na Baboy</title>
+</head>
+
+<body>
+
+    <!------------------ Navigation bar - Top --------------------->
+ 
+    <nav class="nav01">
+        <ul>
+            <li><a class="navtitle" href="../../index.html">CooKit</a></li>
+            <li><a class="button" href="../../page01.html">HOME</a></li>
+            <li><a class="button" href="../../page02.html">RECIPES</a></li> 
+            <li><a class="button" href="../../page03.html">ABOUT US</a></li>
+            <li><a class="button" href="../../page04.html">CONTACT US</a></li>
+        </ul>
+    </nav>
+
+    <!--------------------------- Body ----------------------------->
+    
+    <a class="backbutton" onclick="history.back()">←</a>
+    
+    <p class="dish">Sinigang na Baboy</p>
+        
+    <p class="tab">Ingredients</p>
+
+    <div class="column2">
+        <div class="column2-content">
+            <p>1 kilo Pork into small chunk cubes </p>
+            <p>2 medium size onion, quartered</p>
+            <p>2 medium size tomato, quartered</p>
+            <p>1 radish, sliced diagonally</p>
+            <p>4 gabi taro root, cubed</p>
+            <p>2 medium size eggplant, sliced diagonally</p>    
+        </div>
+
+        <div class="column2-content">
+            <p>1 bundle sitaw, cut into 2 inches length</p>
+            <p>1 bundle kangkong leaves</p>
+            <p>2 tbsp Sampaloc / Tamarind Sinigang mix</p>
+            <p>3 Siling haba</p>
+            <p>Salt or Patis</p>
+        </div>
+    </div>
+
+    <p class="tab">Procedures</p>
+
+    <div class="column1-1">
+        <div></div>
+        <div class="column1-content1">
+            <p>1.	Pour water into a cooking pot. Let boil</p>
+            <p>2.	Add onion and tomato. Boil for 5 to 8 minutes.</p>
+            <p>3.	Put the pork in the cooking pot. Boil for 25 minutes.</p>
+            <p>4.	Add the taro. Cover and continue to boil for 30 minutes.</p>
+            <p>5.	Add Knorr Sinigang sa Sampaloc mix, fish sauce, and ground black pepper; stir.</p>
+            <p>6.	Put the daikon radish in. Cook for 3 to 5 minutes.</p>
+            <p>7.	Add the chili peppers, okra, and snake beans. Cook for 7 minutes.</p>
+            <p>8.	Add the kangkong. Cover the cooking pot and turn off the heat. Let it stay covered for 5 minutes.</p>
+            <p>9.	Transfer to as serving bowl. Serve with a small bowl with patis and spicy chili.</p>
+            <p>10.	Share and enjoy!
+            
+        </div>
+        <div></div>
+    </div>
+
+    <div class="rate-container">
+        <p class="review">Rate the recipe!</p>
+            <div class="send">
+                <div class="text">Thank you for your rating!</div>
+            </div>
+        <div class="rating">
+            <input type="radio" id="five" name="stars">
+            <label for="five"></label>
+            <input type="radio" id="four" name="stars">
+            <label for="four"></label>
+            <input type="radio" id="three" name="stars">
+            <label for="three"></label>
+            <input type="radio" id="two" name="stars">
+            <label for="two"></label>
+            <input type="radio" id="one" name="stars">
+            <label for="one"></label>
+            <form action="#">
+            <header></header>
+                <div class="areatext">
+                    <textarea cols="25" placeholder="What did you think about this recipe? Did you make any changes to this recipe?"></textarea>
+                </div>
+                <div class="bttn">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        const bttn = document.querySelector("button");
+        const send = document.querySelector(".send");
+        const rating = document.querySelector(".rating");
+        bttn.onclick = ()=> {
+            rating.style.display = "none";
+            send.style.display = "block";
+            return false;
+        }
+    </script>
+
+</body>
+</html>

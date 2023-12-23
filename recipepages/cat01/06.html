@@ -1,0 +1,104 @@
+<html>
+<head>
+    <link rel="stylesheet" href="../../css/page.css">
+    <link rel="icon" href="../../images/logo.png">
+    <title>CooKit - Pinakbet</title>
+</head>
+
+<body>
+
+    <!------------------ Navigation bar - Top --------------------->
+ 
+    <nav class="nav01">
+        <ul>
+            <li><a class="navtitle" href="../../index.html">CooKit</a></li>
+            <li><a class="button" href="../../page01.html">HOME</a></li>
+            <li><a class="button" href="../../page02.html">RECIPES</a></li> 
+            <li><a class="button" href="../../page03.html">ABOUT US</a></li>
+            <li><a class="button" href="../../page04.html">CONTACT US</a></li>
+        </ul>
+    </nav>
+
+    <!--------------------------- Body ----------------------------->
+    
+    <a class="backbutton" onclick="history.back()">←</a>
+    
+    <p class="dish">Pinakbet</p>
+        
+    <p class="tab">Ingredients</p>
+
+    <div class="column1">
+        <div class="column1-content">
+            <p>Kosher salt</p>
+            <p>1 bitter melon (about 225g) cut into 1/4-inch-thick slices (optional) </p>
+            <p>2 tablespoons vegetable oil</p>
+            <p>1 small yellow onion (4 ounces), finely chopped</p>
+            <p>2 medium garlic cloves, minced</p>
+            <p>1/4 cup ginisang bagoong (see note) </p>
+            <p>2 cups homemade or instant dashi</p>
+            <p>1 small sweet potato (about 225g), cut into 1/4-inch slices</p>
+            <p>8 ounces Chinese long beans or string beans, cut into 2-inch lengths</p>
+            <p>1 medium Japanese eggplant (about 170g), cut into 1/2-inch-thick slices</p>
+            <p>8 ounces (225g) okra, caps trimmed, pods cut in half on a bias</p>
+            <p>Cooked white rice, for serving</p>
+            <p>2 plum tomatoes (about 225g), cored and chopped </p>                         
+        </div>
+    </div>
+    
+    <p class="tab">Procedures</p>
+
+    <div class="column1-1">
+        <div></div>
+        <div class="column1-content1">
+            <p>1. Heat cooking oil in a pot. Saute onion and garlic. Add ginger and continue to cook until the onion softens.</p>
+            <p>2. Add lechon kawali. Saute for 1 minute.</p>
+            <p>3. Pour water. Let boil.</p>
+            <p>4. Add Knorr Shrimp Cube. Cover the pot and cook in medium heat for 20 minutes.</p>
+            <p>5. Add tomato and bagoong alamang. Stir. Cover the pot. Cook for 3 minutes.</p>
+            <p>6. Put the kalabasa and kamote into the pot. Cook for 7 minutes.</p>
+            <p>7. Add sitaw, okra, ampalaya, and eggplant. Stir. Cover the pot and cook for 5 minutes.</p>
+            <p>8. Season with ground black pepper and add remaining lechon kawali. Cook for minutes.</p>
+            <p>9. Tranfer to a serving plate. Serve. Share and Enjoy!</p>
+        </div>
+    </div>
+
+    <div class="rate-container">
+        <p class="review">Rate the recipe!</p>
+            <div class="send">
+                <div class="text">Thank you for your rating!</div>
+            </div>
+        <div class="rating">
+            <input type="radio" id="five" name="stars">
+            <label for="five"></label>
+            <input type="radio" id="four" name="stars">
+            <label for="four"></label>
+            <input type="radio" id="three" name="stars">
+            <label for="three"></label>
+            <input type="radio" id="two" name="stars">
+            <label for="two"></label>
+            <input type="radio" id="one" name="stars">
+            <label for="one"></label>
+            <form action="#">
+            <header></header>
+                <div class="areatext">
+                    <textarea cols="25" placeholder="What did you think about this recipe? Did you make any changes to this recipe?"></textarea>
+                </div>
+                <div class="bttn">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        const bttn = document.querySelector("button");
+        const send = document.querySelector(".send");
+        const rating = document.querySelector(".rating");
+        bttn.onclick = ()=> {
+            rating.style.display = "none";
+            send.style.display = "block";
+            return false;
+        }
+    </script>
+
+</body>
+</html>

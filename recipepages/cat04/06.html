@@ -1,0 +1,109 @@
+<html>
+<head>
+    <link rel="stylesheet" href="../../css/page.css">
+    <link rel="icon" href="../../images/logo.png">
+    <title>CooKit - Pan Fried Noodles</title>
+</head>
+
+<body>
+
+    <!------------------ Navigation bar - Top --------------------->
+ 
+    <nav class="nav01">
+        <ul>
+            <li><a class="navtitle" href="../../index.html">CooKit</a></li>
+            <li><a class="button" href="../../page01.html">HOME</a></li>
+            <li><a class="button" href="../../page02.html">RECIPES</a></li> 
+            <li><a class="button" href="../../page03.html">ABOUT US</a></li>
+            <li><a class="button" href="../../page04.html">CONTACT US</a></li>
+        </ul>
+    </nav>
+
+    <!--------------------------- Body ----------------------------->
+    
+    <a class="backbutton" onclick="history.back()">←</a>
+    
+    <p class="dish">Pan Fried Noodles</p>
+        
+    <p class="tab">Ingredients</p>
+
+    <div class="column2">
+        <div class="column2-content">
+            <p>1 tablespoon + 2 teaspoons vegetable oil divided use</p>
+            <p>1 cup shredded carrots</p>
+            <p>1/2 cup white onion thinly sliced</p>
+            <p>1/2 cup green onions cut into 1 inch pieces, then thinly sliced lengthwise</p>
+            <p>2 teaspoons minced garlic</p>
+            <p>12 ounces cooked fresh noodles such as yakisoba or Hong Kong noodles</p>
+            <p>1/4 cup low sodium soy sauce</p> 
+        </div>
+
+        <div class="column2-content">
+            <p>1 tablespoon hoisin sauce</p>
+            <p>1 tablespoon toasted sesame oil</p>
+            <p>2 teaspoons cornstarch</p>
+            <p>1 cup bean sprouts</p>
+            <p>1 tablespoon sesame seeds</p>
+            <p>thinly sliced green onions for garnish optional</p>             
+        </div>
+    </div>
+
+    <p class="tab">Procedures</p>
+
+    <div class="column1-1">
+        <div></div>
+        <div class="column1-content1">
+            <p>1.	Heat 2 teaspoons of vegetable oil over medium high heat in a large pan. Add the carrots and white onions to the pan.</p>
+            <p>2.	Cook for 3-5 minutes or until vegetables are softened.</p>
+            <p>3.	Add the green onions and garlic and cook for 30 seconds. Remove the vegetables from the pan, and cover to keep warm.</p>
+            <p>4.	Rinse the noodles under hot water to separate them.</p>
+            <p>5.	Heat the remaining tablespoon of vegetable oil in the pan. Add the noodles and cook for 3-4 minutes per side or until browned and crispy on the edges.</p>
+            <p>6.	Add the vegetables back to the pan.</p>
+            <p>7.	In a small bowl, whisk together the soy sauce, hoisin sauce, sesame oil, cornstarch and 2 tablespoons of cold water.</p>
+            <p>8.	Add the bean sprouts to the pan, and toss to combine.</p>
+            <p>9.	Add the sauce to the pan and bring to a simmer. Cook for 2-3 minutes or until sauce has just thickened and bean sprouts have wilted.</p>
+            <p>10.	Sprinkle with sesame seeds and additional green onions if desired, then serve.</p>
+        </div>
+        <div></div>
+    </div>
+
+    <div class="rate-container">
+        <p class="review">Rate the recipe!</p>
+            <div class="send">
+                <div class="text">Thank you for your rating!</div>
+            </div>
+        <div class="rating">
+            <input type="radio" id="five" name="stars">
+            <label for="five"></label>
+            <input type="radio" id="four" name="stars">
+            <label for="four"></label>
+            <input type="radio" id="three" name="stars">
+            <label for="three"></label>
+            <input type="radio" id="two" name="stars">
+            <label for="two"></label>
+            <input type="radio" id="one" name="stars">
+            <label for="one"></label>
+            <form action="#">
+            <header></header>
+                <div class="areatext">
+                    <textarea cols="25" placeholder="What did you think about this recipe? Did you make any changes to this recipe?"></textarea>
+                </div>
+                <div class="bttn">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        const bttn = document.querySelector("button");
+        const send = document.querySelector(".send");
+        const rating = document.querySelector(".rating");
+        bttn.onclick = ()=> {
+            rating.style.display = "none";
+            send.style.display = "block";
+            return false;
+        }
+    </script>
+
+</body>
+</html>

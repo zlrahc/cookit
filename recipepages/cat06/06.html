@@ -1,0 +1,92 @@
+<html>
+<head>
+    <link rel="stylesheet" href="../../css/page.css">
+    <link rel="icon" href="../../images/logo.png">
+    <title>CooKit - S’mores Milk Shake</title>
+</head>
+
+<body>
+
+    <!------------------ Navigation bar - Top --------------------->
+ 
+    <nav class="nav01">
+        <ul>
+            <li><a class="navtitle" href="../../index.html">CooKit</a></li>
+            <li><a class="button" href="../../page01.html">HOME</a></li>
+            <li><a class="button" href="../../page02.html">RECIPES</a></li> 
+            <li><a class="button" href="../../page03.html">ABOUT US</a></li>
+            <li><a class="button" href="../../page04.html">CONTACT US</a></li>
+        </ul>
+    </nav>
+
+    <!--------------------------- Body ----------------------------->
+    
+    <a class="backbutton" onclick="history.back()">←</a>
+    
+    <p class="dish">S’mores Milk Shake</p>
+        
+    <p class="tab">Ingredients</p>
+
+    <div class="column1">
+        <div class="column1-content">
+            <p>2 tablespoons chocolate-flavor syrup, plus more for garnish</p>
+            <p>10 marshmallows</p>
+            <p>1 pint rocky road or chocolate chip ice cream</p>
+            <p>¾ cup half-and-half</p>
+            <p>3 tablespoons marshmallow créme</p>                                            
+        </div>
+    </div>
+
+    <p class="tab">Procedures</p>
+
+    <div class="column1-1">
+        <div></div>
+        <div class="column1-content1">
+            <p>1.	Drizzle the inside of two 12-ounce glasses with chocolate syrup. Place in freezer until ready to use.</p>
+            <p>2.	Place marshmallows on a small baking sheet. Broil 4 to 5 inches from the top until toasted and golden brown, about 1 minute. Cool completely. Set aside 2 marshmallows.</p>
+            <p>3.	Meanwhile, spread marshmallow créme on the rim of the cold glasses. Sprinkle with 2 tablespoons crushed graham crackers.</p>
+            <p>4.	Combine remaining 8 toasted marshmallows, ice cream, and half-and-half in a blender. Cover and blend until smooth. Divide between prepared glasses. Top with whipped cream, additional chocolate syrup and graham crackers, the reserved marshmallows, chocolate, and sprinkles, if desired.      </p>      
+        </div>
+        <div></div>
+    </div>
+
+    <div class="rate-container">
+        <p class="review">Rate the recipe!</p>
+            <div class="send">
+                <div class="text">Thank you for your rating!</div>
+            </div>
+        <div class="rating">
+            <input type="radio" id="five" name="stars">
+            <label for="five"></label>
+            <input type="radio" id="four" name="stars">
+            <label for="four"></label>
+            <input type="radio" id="three" name="stars">
+            <label for="three"></label>
+            <input type="radio" id="two" name="stars">
+            <label for="two"></label>
+            <input type="radio" id="one" name="stars">
+            <label for="one"></label>
+            <form action="#">
+            <header></header>
+                <div class="areatext">
+                    <textarea cols="25" placeholder="What did you think about this recipe? Did you make any changes to this recipe?"></textarea>
+                </div>
+                <div class="bttn">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        const bttn = document.querySelector("button");
+        const send = document.querySelector(".send");
+        const rating = document.querySelector(".rating");
+        bttn.onclick = ()=> {
+            rating.style.display = "none";
+            send.style.display = "block";
+            return false;
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,99 @@
+<html>
+<head>
+    <link rel="stylesheet" href="../../css/page.css">
+    <link rel="icon" href="../../images/logo.png">
+    <title>CooKit - Misua</title>
+</head>
+
+<body>
+
+    <!------------------ Navigation bar - Top --------------------->
+ 
+    <nav class="nav01">
+        <ul>
+            <li><a class="navtitle" href="../../index.html">CooKit</a></li>
+            <li><a class="button" href="../../page01.html">HOME</a></li>
+            <li><a class="button" href="../../page02.html">RECIPES</a></li> 
+            <li><a class="button" href="../../page03.html">ABOUT US</a></li>
+            <li><a class="button" href="../../page04.html">CONTACT US</a></li>
+        </ul>
+    </nav>
+
+    <!--------------------------- Body ----------------------------->
+    
+    <a class="backbutton" onclick="history.back()">←</a>
+    
+    <p class="dish">Misua</p>
+        
+    <p class="tab">Ingredients</p>
+
+    <div class="column2">
+        <div class="column2-content">
+            <p> 1 tbsp olive oil</p>
+            <p> 2 cloves garlic chopped</p>
+            <p> 1 small onion chopped</p>
+            <p> 1/2 lb lean ground pork</p>
+            <p> 1 tbsp fish sauce or 1 tsp salt</p>                   
+        </div>
+
+        <div class="column2-content">
+            <p> 6 cups chicken broth (I used homemade broth, see notes below for recipe) </p>
+            <p> 2 oz misua noodles or Japanese somen noodles</p>
+            <p> Salt and pepper to taste</p>
+            <p> Chopped green onion for garnish</p>      
+        </div>
+    </div>
+
+    <p class="tab">Procedures</p>
+
+    <div class="column1-1">
+        <div></div>
+        <div class="column1-content1">
+            <p>1.	In a skillet, heat oil over medium high heat. Add garlic and onion; sauté for 2-3 minutes or until onion has softened.</p>
+            <p>2.	Add ground pork and sauté for 3 minutes or until pork is no longer pink. Add fish sauce (or salt) and stir to combine.</p>
+            <p>3.	Add broth and bring to a boil. Stir in misua and cook until soft, about 3 minutes.</p>
+            <p>4.	Serve immediately, garnish with green onions.</p>            
+        </div>
+        <div></div>
+    </div>
+
+    <div class="rate-container">
+        <p class="review">Rate the recipe!</p>
+            <div class="send">
+                <div class="text">Thank you for your rating!</div>
+            </div>
+        <div class="rating">
+            <input type="radio" id="five" name="stars">
+            <label for="five"></label>
+            <input type="radio" id="four" name="stars">
+            <label for="four"></label>
+            <input type="radio" id="three" name="stars">
+            <label for="three"></label>
+            <input type="radio" id="two" name="stars">
+            <label for="two"></label>
+            <input type="radio" id="one" name="stars">
+            <label for="one"></label>
+            <form action="#">
+            <header></header>
+                <div class="areatext">
+                    <textarea cols="25" placeholder="What did you think about this recipe? Did you make any changes to this recipe?"></textarea>
+                </div>
+                <div class="bttn">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        const bttn = document.querySelector("button");
+        const send = document.querySelector(".send");
+        const rating = document.querySelector(".rating");
+        bttn.onclick = ()=> {
+            rating.style.display = "none";
+            send.style.display = "block";
+            return false;
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+<html>
+<head>
+    <link rel="stylesheet" href="../../css/page.css">
+    <link rel="icon" href="../../images/logo.png">
+    <title>CooKit - Tinolang Manok</title>
+</head>
+
+<body>
+
+    <!------------------ Navigation bar - Top --------------------->
+ 
+    <nav class="nav01">
+        <ul>
+            <li><a class="navtitle" href="../../index.html">CooKit</a></li>
+            <li><a class="button" href="../../page01.html">HOME</a></li>
+            <li><a class="button" href="../../page02.html">RECIPES</a></li> 
+            <li><a class="button" href="../../page03.html">ABOUT US</a></li>
+            <li><a class="button" href="../../page04.html">CONTACT US</a></li>
+        </ul>
+    </nav>
+
+    <!--------------------------- Body ----------------------------->
+    
+    <a class="backbutton" onclick="history.back()">←</a>
+    
+    <p class="dish">Tinolang Manok</p>
+        
+    <p class="tab">Ingredients</p>
+
+    <div class="column2">
+        <div class="column2-content">
+            <p>3/4 kilo Chicken drumstick cut</p>
+            <p>2 tbsp canola oil</p>
+            <p>1 small onion peeled and sliced</p>
+            <p>3 cloves garlic minced</p>
+            <p>2 thumb-sized fresh ginger</p>
+            <p>1 cup tomato sliced</p>
+            <p>2 pcs chicken cubes</p>          
+        </div>
+
+        <div class="column2-content">
+            <p>5 cups water</p>
+            <p>1 small green papaya cut into 2-inch wedges</p>
+            <p>2 cups fresh Siling Labuyo leaves</p>
+            <p>2 bunch of Lemongrass</p>
+            <p>3 pcs finger chili</p>
+            <p>salt and pepper to taste</p>
+            <p>3 tbsp fish sauce</p>   
+        </div>
+    </div>
+
+    <p class="tab">Procedures</p>
+
+    <div class="column1-1">
+        <div></div>
+        <div class="column1-content1">
+            <p>1.	In a large pan, heat oil and saute' garlic, onion, and ginger and cook until ginger is fragrant.</p>
+            <p>2.	Add tomato slices and cook for 3 minutes then add chicken.</p>
+            <p>3.	When the chicken turned brown, add water and lemongrass.</p>
+            <p>4.	Bring to a boil, skimming scum that floats on top.</p>
+            <p>5.	Lower heat and simmer for about 20 minutes or until chicken is almost done.</p>
+            <p>6.	Add 1 chicken cube.</p>
+            <p>7.	Add papaya and Siling Haba ( chili ) and continue to simmer for an additional 5 minutes or until papaya softens but not overcooked.</p>
+            <p>8.	Taste test and add another 1 chicken cube (optional).</p>
+            <p>9.	Add Chilli leaves, season with Patis and simmer for another 2 minutes then turn off the heat.</p>
+            <p>10.	Serve steaming hot with plain rice.</p>            
+        </div>
+    </div>
+
+    <div class="rate-container">
+        <p class="review">Rate the recipe!</p>
+            <div class="send">
+                <div class="text">Thank you for your rating!</div>
+            </div>
+        <div class="rating">
+            <input type="radio" id="five" name="stars">
+            <label for="five"></label>
+            <input type="radio" id="four" name="stars">
+            <label for="four"></label>
+            <input type="radio" id="three" name="stars">
+            <label for="three"></label>
+            <input type="radio" id="two" name="stars">
+            <label for="two"></label>
+            <input type="radio" id="one" name="stars">
+            <label for="one"></label>
+            <form action="#">
+            <header></header>
+                <div class="areatext">
+                    <textarea cols="25" placeholder="What did you think about this recipe? Did you make any changes to this recipe?"></textarea>
+                </div>
+                <div class="bttn">
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        const bttn = document.querySelector("button");
+        const send = document.querySelector(".send");
+        const rating = document.querySelector(".rating");
+        bttn.onclick = ()=> {
+            rating.style.display = "none";
+            send.style.display = "block";
+            return false;
+        }
+    </script>
+
+</body>
+</html>
